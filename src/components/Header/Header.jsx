@@ -9,7 +9,7 @@ export default async function Header() {
   const user = await getUser();
 
   return (
-    <header className="p-4  border-b text-black bg-white border-gray-600  flex justify- items-center">
+    <header className="p-4  border-b text-white bg-white border-gray-600  flex justify- items-center">
       <div className="container mx-auto px-4 flex justify-between items-center">
         <div className="dropdown flex items-center">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden ">
@@ -74,7 +74,7 @@ export default async function Header() {
               </div>
               <ul
                 tabIndex={0}
-                className="menu menu-sm text-black dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+                className="menu menu-sm text-white dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
               >
                 <li>
                   <a className="justify-between">{user?.given_name}</a>
